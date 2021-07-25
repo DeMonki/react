@@ -20,11 +20,12 @@ const Header = ({currentUser}) => (
             <Link className='option' to='/contact'>
                 CONTACT
             </Link>
+
             {currentUser ? <div className='option' onClick={() => auth.signOut()} >SIGN OUT </div> 
-                        :  <Link className='option' to='/signin'  > SIGN IN</Link>
+                         :  <Link className='option' to='/signin'  > SIGN IN</Link>
             }
         </div>
-      </div>
+    </div>
 )
 
 const mapStateToProps = state => ({
