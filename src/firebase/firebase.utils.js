@@ -29,7 +29,6 @@ const config = {
                 createdAt,
                 ...additionalDataObject
             })
-
         }catch(error){
             console.log("Error creating user: ", error)
         }
